@@ -4,6 +4,7 @@ metadata:
   name: {{ include "aks-mcp.fullname" . }}
   labels:
     {{- include "aks-mcp.labels" . | nindent 4 }}
+spec:
   replicas: 1
   selector:
     matchLabels:
